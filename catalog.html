@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <title>HTML Academy: Каталог</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="logo">
+
+      </div>
+      <div class="main-nav">
+        <ul>
+          <li class="main-nav__item"><a href="#">Каталог</a></li>
+          <li class="main-nav__item"><a href="#">Доставка и оплата</a></li>
+          <li class="main-nav__item"><a href="#">О Компании</a></li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <ul>
+          <li class="user-menu__item"><a href="#"><span class="user-menu__icon icon-search"></span>Поиск</a></li>
+          <li class="user-menu__item"><a href="#"><span class="user-menu__icon icon-enter"></span>Вход</a></li>
+          <li class="user-menu__item"><a href="#"><span class="user-menu__icon icon-basket"></span>Корзина</a></li>
+        </ul>
+      </div>
+      <div class="time-table">
+        <p>С 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+      </div>
+    </header>
+
+    <div class="breadcrumbs">
+      <ul>
+        <li>Главная</li>
+        <li>Каталог</li>
+        <li>Сливочное</li>
+      </ul>
+    </div>
+
+    <div class="filters">
+      <h2>Сливочное мороженое</h2>
+      <form class="" action="index.html" method="post">
+        <fieldset class="filter-sort">
+          <legend>Сортировка:</legend>
+          <select class="" name="">
+            <option value="">по популярности</option>
+            <option value="">сначала недорогие</option>
+            <option value="">сначала дорогие</option>
+            <option value="">по жирности</option>
+          </select>
+        </fieldset>
+
+        <div class="sort-price">
+            <label for="sort-price">Цена: 100 руб. - 500 руб.</label>
+            <input type="range" min="100" max="500" step="100" value="100" id="sort-price">
+       </div>
+
+        <fieldset class="filter-type">
+          <legend>Жирность:</legend>
+          <label for="1">0%</label>
+          <input id="1" type="checkbox">
+          <label for="2">до 10%</label>
+          <input id="2" type="checkbox" checked>
+          <label for="3">до 30%</label>
+          <input id="3" type="checkbox">
+          <label for="4">выше 30%</label>
+          <input id="4" type="checkbox">
+        </fieldset>
+
+        <fieldset class="filter-option">
+          <legend>Наполнители:</legend>
+          <label for="1">шоколадные</label>
+          <input id="1" type="checkbox" checked>
+          <label for="2">сахарные присыпки</label>
+          <input id="2" type="checkbox" checked>
+          <label for="3">фрукты</label>
+          <input id="3" type="checkbox">
+          <label for="4">сиропы</label>
+          <input id="4" type="checkbox">
+          <label for="5">джемы</label>
+          <input id="5" type="checkbox">
+        </fieldset>
+
+        <button class="filter-btn" type="submit">Применить</button>
+
+      </form>
+    </div>
+
+    <div class="catalog-wrapper">
+
+      <div class="catalog-item--wrapper">
+      <div class="catalog-item">
+        <img src="../img/ice-orange.png" width="267" height="267" alt="">
+        <span class="catalog-item__price">310 p/кг</span>
+        <p class="catalog-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+      </div>
+      <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+      <div class="catalog-item">
+        <img src="" width="267" height="267" alt="">
+        <span class="catalog-item__price"></span>
+        <p class="catalog-item__description"></p>
+        <button class="catalog-item__btn hidden" type="button" name="button">Быстрый просмотр</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-social">
+        <a class="social-btn btn-tw" href="#">twitter</a>
+        <a class="social-btn btn-insta" href="#">instagram</a>
+        <a class="social-btn btn-fb" href="#">facebook</a>
+        <a class="social-btn btn-vk" href="#">vk</a>
+      </div>
+
+      <div class="footer-menu">
+        <a href="#">Для поставщиков</a>
+        <a href="#">О производстве</a>
+        <a href="#">Наши документы</a>
+        <a href="#">Экологические стандарты</a>
+      </div>
+
+      <div class="footer-copyright">
+        <img src="../img/logo-htmlacademy.png" width="108" height="38" alt="">
+        <p>Сделано в HTML Academy © 2016</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
