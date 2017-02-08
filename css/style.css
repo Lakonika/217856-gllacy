@@ -272,27 +272,46 @@ template {
   min-width: 420px;
   max-width: 560px;
   height: 222px;
-  padding: 0 20px;
+  padding: 5px;
   box-sizing: border-box;
   border-radius: 20px;
   background: url("../img/post-bcg.jpg") no-repeat 0 0;
   float: right;
+}
+.subscribe--background {
+  height: 212px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.subscribe p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.subscribe button {
+  width: 130px;
+  font-size: 18px;
+}
+.subscribe input {
+  width: 370px;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
 }
 .catalog-wrapper {
   width: 100%;
   margin: auto;
   padding: 0 20px;
   box-sizing: border-box;
-  display: inline-block;
-  -moz-column-count: 4;
-       column-count: 4;
 }
 .catalog-item {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   width: 22.2%;
   margin: auto;
-  min-width: 200px;
-  max-width: 267px;
+  padding: 10px;
   min-height: 290px;
   text-align: center;
 }
@@ -304,11 +323,12 @@ template {
 }
 .catalog-item__price {
   position: absolute;
-  bottom: 80px;
-  left: 0;
+  top: 180px;
+  left: 10px;
   font-size: 45px;
   font-weight: bold;
   color: white;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 .catalog-item__description {
   font-size: 16px;
@@ -316,18 +336,66 @@ template {
   color: white;
   text-decoration: underline;
 }
+.catalog-item:hover {
+  background-color: #aebeb4;
+  border-radius: 5px;
+  padding-bottom: 25px;
+}
+.catalog-item__popular {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+  background: url("../img/hit.png") no-repeat 0 0;
+}
+.catalog-item:hover .catalog-item__btn {
+  visibility: visible;
+  width: 200px;
+  height: 45px;
+}
 .catalog-item__btn {
   visibility: hidden;
 }
 .catalog-item--wrapper {
   text-align: center;
 }
-.catalog-item--wrapper:hover {
-  background-color: #aebeb4;
+.contacts {
+  width: 305px;
+  height: 305px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
   border-radius: 5px;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
-.catalog-item--wrapper:hover .catalog-item__btn {
-  visibility: visible;
+.contacts p {
+  font-size: 14px;
+}
+.contacts h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.feedback {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+  height: 45px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  color: #ffffff;
+  border-radius: 50px;
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
 }
 .main-wrapper {
   min-width: 900px;
@@ -452,6 +520,15 @@ template {
   color: white;
   cursor: pointer;
 }
+.main-nav__submenu {
+  display: none;
+}
+.main-nav:hover .main-nav__submenu {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
 .time-table {
   float: right;
   clear: both;
@@ -464,6 +541,7 @@ template {
 }
 .map {
   width: 100%;
+  position: relative;
   height: 430px;
   margin: auto;
   background: url("../img/map.jpg") no-repeat 0 0;
@@ -523,7 +601,7 @@ footer {
   width: 96%;
   margin: auto;
   margin-bottom: 40px;
-  padding-top: 270px;
+  padding-top: 380px;
   text-align: center;
 }
 .slide {
@@ -590,6 +668,7 @@ footer {
 }
 .user-menu__item {
   width: auto;
+  position: relative;
   float: left;
   margin-top: 15px;
   margin-right: 20px;
@@ -597,6 +676,24 @@ footer {
 .user-menu__item a {
   text-decoration: none;
   color: white;
+}
+.user-menu__search {
+  display: none;
+}
+.user-menu__item:hover .user-menu__search {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.popup-login {
+  display: none;
+}
+.user-menu__item:hover .popup-login {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 button {
   display: inline-block;
@@ -618,6 +715,9 @@ button:hover {
 button:active {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px #ac1000;
+}
+.btn {
+  height: 45px;
 }
 .offer-btn {
   width: 170px;
